@@ -6,8 +6,10 @@
     <title>Brian Suhit</title>
 </head>
 <body>
-    <header class="menu">
-        <p class="logo">Brian Suhit</p>
+
+    <!-- Seccion Header con navegacion ( menu ) -->
+    <header>
+        <p>Brian Suhit</p>
         <nav>
             <ul>
                 <li><a href="#intro">Inicio</a></li>
@@ -15,12 +17,58 @@
                 <li><a href="#tecnologias">Tecnologias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+        </nav>
     </header>
 
-    <section id="intro">
+    <!-- Sección principal ( llamada a la accion, imagen, botones, etc) -->
+    <main>
+        <section>
         <h1>Desarrollador web 3D</h1>
-        <p>Soy brian y soy artista 3D y programador web</p>
+        <div>
+            <a href="#">Contacto</a>    <!-- link redirecciona a la seccion form -->
+            <a href="#">Linkedin</a>    <!-- link redirecciona a linkedln -->
+            <a href="#">Github</a>      <!-- link redirecciona a github -->
+            <a href="#">Cv</a>          <!-- link para descargar CV  -->
+        </div>
+        <div>
+            <img src="" alt="imagen 3d representativa de brian y su trabajo">
+        </div>
+    </section>
+    </main>
+
+    <!-- Seccion Proyectos -->
+    <section>
+        <h2>Proyectos</h2>
     </section>
 
+    <!-- Seccion tecnologias que manejo -->
+    <section>
+        <h2>Tecnologias y programas</h2>
+        <div>
+        <!-- Imágenes de logos -->
+        <img src="" alt="HTML">
+        <img src="" alt="CSS">
+        <img src="" alt="JavaScript">
+        <img src="" alt="Three.js">
+        <img src="" alt="Blender">
+        </div>
+    </section>
+
+    <!-- Seccion Contacto -->
+    <section>
+        <h2>Contacto</h2>
+        <form action="">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="text" placeholder="Asunto" required>
+            <input type="text" placeholder="Mensaje" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Seccion Footer -->
+    <footer>
+        <p>© 2025 Brian Suhit. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
