@@ -1,0 +1,29 @@
+/* fuente para el nombre del Header y el footer */
+@font-face 
+{
+    font-family: "Arco";
+    src: url("assets/fonts/ARCO.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* fuente para el nav ( inicio, proyectos,, tecnologia contacto ) */
+@font-face {
+    font-family: "Montserrat-extrabold";
+    src: url("assets/fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+    font-weight: extrabold;
+}
+
+/* fuente para el texto normal en todo el portfolio */
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url("assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+    font-weight: regular;
+}
+
+/* fuente para los Sub-titulos ( Programador 3d en el main, Proyectos, Tecnologias, Contacto */
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url("assets/fonts/Montserrat/Montserrat-bold.ttf") format("truetype");
+    font-weight: bold;
+}

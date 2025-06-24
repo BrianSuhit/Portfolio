@@ -1,0 +1,28 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header-logo 
+{
+    /* tambien lo use en el footer */
+    font-family: "Arco", sans-serif;
+}
+
+Header a
+{
+    font-family: "Montserrat-extrabold";
+    text-decoration: none;
+}
+
+h1, h2
+{
+    font-family: "Montserrat-bold";
+}
+
+body
+{
+    font-family: "Montserrat-regular";
+}
