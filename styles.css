@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.Header-logo 
+.Header_logo 
 {
     /* tambien lo use en el footer */
     font-family: "Arco", sans-serif;
@@ -14,7 +14,7 @@
 Header a
 {
     font-family: "Montserrat-extrabold";
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 h1, h2
@@ -25,4 +25,19 @@ h1, h2
 body
 {
     font-family: "Montserrat-regular";
+}
+
+.icon
+{
+    width: 30px;
+    height: 30px;
+}
+
+.tecnologias_iconos
+{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
 }

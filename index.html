@@ -11,7 +11,7 @@
 
     <!-- Seccion Header con navegacion ( menu ) -->
     <header>
-        <p class="Header-logo">Brian Suhit</p>
+        <p class="Header_logo">Brian Suhit</p>
         <nav>
             <ul>
                 <li><a href="#intro">Inicio</a></li>
@@ -24,13 +24,19 @@
 
     <!-- Sección principal ( llamada a la accion, imagen, botones, etc) -->
     <main>
-        <section>
+        <section id="intro">
         <h1>Desarrollador web 3D</h1>
         <div>
-            <a href="#">Contacto</a>    <!-- link redirecciona a la seccion form -->
-            <a href="#">Linkedin</a>    <!-- link redirecciona a linkedln -->
-            <a href="#">Github</a>      <!-- link redirecciona a github -->
-            <a href="#">Cv</a>          <!-- link para descargar CV  -->
+            <a href="#contacto">Contacto</a>
+            <a href="https://www.linkedin.com/in/briansuhit/" target="_blank">
+                <img class="icon" src="assets/icons/linkedin.svg" alt="icono de LinkedIn">
+            </a>
+            <a href="https://github.com/BrianSuhit" target="_blank">
+                <img class="icon" src="assets/icons/github.svg" alt="icono de GitHub">
+            </a>
+            <a href="assets/cv-briansuhit.pdf" download>
+                <img class="icon" src="assets/icons/cv.svg" alt="icono de descarga del CV">
+            </a>
         </div>
         <div>
             <img src="" alt="imagen 3d representativa de brian y su trabajo">
@@ -39,25 +45,25 @@
     </main>
 
     <!-- Seccion Proyectos -->
-    <section>
+    <section id="proyectos">
         <h2>Proyectos</h2>
     </section>
 
     <!-- Seccion tecnologias que manejo -->
-    <section>
+    <section id="tecnologias">
         <h2>Tecnologias</h2>
-        <div>
         <!-- Imágenes de logos -->
-        <img src="" alt="HTML">
-        <img src="" alt="CSS">
-        <img src="" alt="JavaScript">
-        <img src="" alt="Three.js">
-        <img src="" alt="Blender">
+        <div class="tecnologias_iconos">
+        <img src="assets/icons/html5.svg" alt="HTML">
+        <img src="assets/icons/css.svg" alt="CSS">
+        <img src="assets/icons/javascript.svg" alt="JavaScript">
+        <img src="assets/icons/three.js.svg" alt="Three.js">
+        <img src="assets/icons/blender.svg" alt="Blender">
         </div>
     </section>
 
     <!-- Seccion Contacto -->
-    <section>
+    <section id="contacto">
         <h2>Contacto</h2>
         <form action="">
             <input type="text" placeholder="Nombre completo" required>
@@ -69,7 +75,7 @@
     </section>
 
     <!-- Seccion Footer -->
-    <footer class="Header-logo">
+    <footer class="Header_logo">
         <p>© 2025 Brian Suhit. Todos los derechos reservados.</p>
     </footer>
 </body>
