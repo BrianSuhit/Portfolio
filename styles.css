@@ -119,12 +119,12 @@ body
 /* MAIN FINISH */
 
 /* PROYECTS STARTED */
-h2 
+.proyectos__title 
 {
     font-size: 1.8rem;
     font-family: "Montserrat-extrabold";
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 3rem 0 2rem 0;     /* 2rem TENIA  */
     color: #333;
 }
 
@@ -174,14 +174,35 @@ h2
 }
 /* PROYECTS FINISH */
 
-
-
-.tecnologias_iconos
+/* TECNOLOGIES STARTED */
+.tecnologias__title 
 {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    gap: 1rem;
+    font-size: 1.8rem;
+    font-family: "Montserrat-extrabold";
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+    color: #333;
 }
+
+.tecnologias__grid 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 2rem 1.5rem; 
+    padding: 0 1rem; 
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tecnologias__icon 
+{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+/* TECNOLOGIES FINISH */
+
+/* CONTACT STARTED */
