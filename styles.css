@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scrollbar-color: #ff6600 transparent;
 }
 
 body
@@ -191,7 +192,7 @@ body
     justify-content: center; 
     align-items: center; 
     gap: 2rem 1.5rem; 
-    padding: 0 1rem; 
+    padding: 1rem 1rem; 
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -206,3 +207,82 @@ body
 /* TECNOLOGIES FINISH */
 
 /* CONTACT STARTED */
+.contact 
+{
+    padding: 2rem 1rem;
+    background-color: ghostwhite;
+}
+
+.contact__title 
+{
+    font-size: 1.8rem;
+    font-family: "Montserrat-extrabold";
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.contact__form-group 
+{
+    margin-bottom: 1.5rem;
+}
+
+.contact__label
+{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat-bold";
+    color: #555;
+}
+
+.contact__input:focus 
+{
+    outline: none;
+    border-color: #ff6600; 
+}
+
+.contact__input,
+.contact__textarea 
+{
+    width: 100%;
+    padding: 0.8rem;
+    font-family: "Montserrat-regular";
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+.contact__button
+{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-family: "Montserrat-extrabold";
+    font-size: 1.1rem;
+    color: white;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+/* CONTACT FINISHED */
+
+/* FOOTER STARTED */
+.footer
+{
+    background-color: #ff6600;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.footer__text 
+{
+    color: white;
+    font-family: "Arco";
+    font-size: 1rem;
+    margin: 0;
+}
+/* FOOTER FINISH */

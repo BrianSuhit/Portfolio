@@ -58,21 +58,21 @@
             <a href="https://github.com/BrianSuhit/Portfolio" target="_blank" class="proyectos__item">
                 <img src="assets/images/placeholder-800x800.png" alt="proyecto 1">
                 <div class="proyectos__overlay">
-                    <span>Proyecto 1</span>
+                    <span>Portfolio</span>
                 </div>
             </a>
 
-            <a href="#" target="_blank" class="proyectos__item">
+            <a href="https://github.com/BrianSuhit/proyectos-programacion/tree/main/snake-game" target="_blank" class="proyectos__item">
                 <img src="assets/images/placeholder-800x800.png" alt="proyecto 2">
                 <div class="proyectos__overlay">
-                    <span>Proyecto 2</span>
+                    <span>Snake Game</span>
                 </div>
             </a>
 
-            <a href="#" target="_blank" class="proyectos__item">
+            <a href="https://github.com/BrianSuhit/proyectos-programacion/tree/main/cronometro" target="_blank" class="proyectos__item">
                 <img src="assets/images/placeholder-800x800.png" alt="proyecto 3">
                 <div class="proyectos__overlay">
-                    <span>Proyecto 3</span>
+                    <span>Cronometro</span>
                 </div>
             </a>
         </div>
@@ -81,7 +81,7 @@
     <!-- Seccion tecnologias que manejo -->
     <section id="tecnologias">
         <h2 class="tecnologias__title">Tecnologias</h2>
-        <!-- Imágenes de logos -->
+
         <div class="tecnologias__grid">
         <img class="tecnologias__icon" src="assets/icons/html5.svg" alt="HTML">
         <img class="tecnologias__icon" src="assets/icons/css.svg" alt="CSS">
@@ -92,20 +92,37 @@
     </section>
 
     <!-- Seccion Contacto -->
-    <section id="contacto">
+    <section id="contacto" class="contact">
         <h2 class="contact__title">Contacto</h2>
-        <form action="">
-            <input type="text" placeholder="Nombre completo" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="text" placeholder="Asunto" required>
-            <input type="text" placeholder="Mensaje" required>
-            <button type="submit">Enviar</button>
+        <form class="contact__form" action="" method="post">
+
+        <div class="contact__form-group">
+            <label for="nombre" class="contact__label">Nombre completo</label>
+            <input id="nombre"name="nombre" type="text" placeholder="" class="contact__input" required>
+        </div>
+            
+        <div class="contact__form-group">
+            <label for="email" class="contact__label">Correo electrónico</label>
+            <input type="email" placeholder="" required>
+        </div>
+
+        <div class="contact__form-group">
+            <label for="asunto" class="contact__label">Asunto</label>
+            <input id="asunto" name="asunto" type="text" class="contact__input" required>
+        </div>
+
+        <div class="contact__form-group">
+            <label for="mensaje" class="contact__label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="contact__textarea" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="contact__button">Enviar</button>
         </form>
     </section>
 
     <!-- Seccion Footer -->
-    <footer>
-        <p>© 2025 Brian Suhit. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <p class="footer__text">© 2025 Brian Suhit. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
