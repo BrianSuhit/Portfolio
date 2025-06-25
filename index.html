@@ -10,16 +10,18 @@
 <body>
 
     <!-- Seccion Header con navegacion ( menu ) -->
-    <header>
-        <p class="Header_logo">Brian Suhit</p>
-        <nav>
-            <ul>
-                <li><a href="#intro">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <header class="header">
+        <div class="header__container">
+        <p class="Header__logo">Brian Suhit</p>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link" href="#intro">Inicio</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#proyectos">Proyectos</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#tecnologias">Tecnologias</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        </div>
     </header>
 
     <!-- Sección principal ( llamada a la accion, imagen, botones, etc) -->
@@ -39,7 +41,7 @@
             </a>
         </div>
         <div>
-            <img src="" alt="imagen 3d representativa de brian y su trabajo">
+            <!-- <img src="" alt="imagen 3d representativa de brian y su trabajo"> ESTO SOLO EN DESKTOP -->
         </div>
     </section>
     </main>
@@ -47,6 +49,29 @@
     <!-- Seccion Proyectos -->
     <section id="proyectos">
         <h2>Proyectos</h2>
+
+        <div class="proyectos-grid">
+            <a href="#" target="_blank" class="proyecto">
+                <img src="" alt="proyecto 1">
+                <div class="overlay">
+                    <span>Proyecto 1</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="proyecto">
+                <img src="" alt="proyecto 2">
+                <div class="overlay">
+                    <span>Proyecto 2</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="proyecto">
+                <img src="" alt="proyecto 3">
+                <div class="overlay">
+                    <span>Proyecto 3</span>
+                </div>
+            </a>
+        </div>
     </section>
 
     <!-- Seccion tecnologias que manejo -->
@@ -75,7 +100,7 @@
     </section>
 
     <!-- Seccion Footer -->
-    <footer class="Header_logo">
+    <footer>
         <p>© 2025 Brian Suhit. Todos los derechos reservados.</p>
     </footer>
 </body>

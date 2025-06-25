@@ -5,26 +5,80 @@
     box-sizing: border-box;
 }
 
-.Header_logo 
+body
 {
-    /* tambien lo use en el footer */
-    font-family: "Arco", sans-serif;
+    font-family: "Montserrat-regular";
 }
 
-Header a
+.header 
 {
-    font-family: "Montserrat-extrabold";
-    /* text-decoration: none; */
+    padding: 2rem 1rem;
+    background-color: ghostwhite;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+.header__container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Header__logo 
+{
+    font-family: "Arco";
+    font-size: 2rem;
+    color: #ff6600;
+    text-align: center;
+}
+
+.header__nav 
+{
+    width: 100%;
+}
+
+.header__menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.header__menu-link
+{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Montserrat-extrabold";
+    font-size: 0.95rem;
+    color: #ff802c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1, h2
 {
     font-family: "Montserrat-bold";
-}
-
-body
-{
-    font-family: "Montserrat-regular";
 }
 
 .icon
@@ -39,5 +93,6 @@ body
     height: 30px;
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 20px;
+    gap: 1rem;
 }
