@@ -255,12 +255,14 @@ body
 .contact__input, .contact__textarea 
 {
     width: 100%;
-    padding: 0.5rem 5rem;
+    padding: 1rem 2.5rem;
+    /* padding: 0.5rem 3rem; */
     font-family: "Montserrat-regular";
     font-size: 1rem;
     border: 2px solid #ccc;
     border-radius: 8px;
     background-color: white;
+    line-height: 1.5;
 }
 
 .contact__button
@@ -472,13 +474,21 @@ body
     /* FORM  QUERY START */
     .contact
     {
-        min-height: 100vh;
+        /* min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         padding: 4rem 1rem;
     }
+
+    .contact__form
+    {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+    
 
     .contact__title
     {
@@ -494,12 +504,6 @@ body
     .contact__button:hover 
     {
         background-color: #5a8320;
-    }
-
-    .contact__form-group
-    {
-        width: 100%;
-        max-width: 600px;
     }
 
     .contact__label
