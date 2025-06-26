@@ -291,11 +291,10 @@ body
 /* FOOTER FINISH */
 
 
-/* DESKTOP QUERIES */
-
+/* DESKTOP QUERY */
 @media (min-width: 768px)
 {
-    /* HEADER QUERIE START */
+    /* HEADER QUERY START */
     .header__container
     {
         flex-direction: row;
@@ -333,7 +332,7 @@ body
         transform: scale(1.2);
         color: #77b02a;
     }
-    /* HEADER QUERIE END */
+    /* HEADER QUERY END */
 
 
     /* INTRO QUERY START */
@@ -431,4 +430,23 @@ body
     /* PROYECTA QUERY END */
 
     /* TECNOLOGIES  QUERY START */
+    .tecnologias__grid
+    {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        max-width: 1000px; 
+    }
+
+    .tecnologias__icon
+    {
+        height: 70px; 
+        width: 70px;
+        transition: transform 0.3s ease;
+    }
+
+    .tecnologias__icon:hover 
+    {
+        transform: scale(1.1);
+    }
+    /* TECNOLOGIES  QUERY END */
 }
