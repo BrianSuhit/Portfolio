@@ -325,8 +325,56 @@ body
 
     .header__menu-link:hover 
     {
-    transform: scale(1.2);
-    color: #77b02a;
+        transform: scale(1.2);
+        color: #77b02a;
     }
-        /* HEADER QUERIE END */
+    /* HEADER QUERIE END */
+
+
+    /* INTRO QUERIE START */
+    .intro 
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4rem;
+        min-height: 90vh;
+        padding: 8rem 6rem;
+    }
+
+    .intro__content
+    {
+        flex: 1;
+        text-align: left;
+    }
+
+    .intro__image
+    {
+        flex: 1;
+    }
+
+    .intro__image img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro__title
+    {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .intro__button
+    {
+        width: auto;
+        margin: 0 0 2.5rem 0;
+        display: inline-block;
+    }
+
+    .intro__social
+    {
+        justify-content: flex-start;
+    }
+
 }
