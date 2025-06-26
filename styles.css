@@ -125,6 +125,7 @@ body
 /* MAIN FINISH */
 
 /* PROYECTS STARTED */
+
 .proyectos__title 
 {
     font-size: 1.8rem;
@@ -181,6 +182,11 @@ body
 /* PROYECTS FINISH */
 
 /* TECNOLOGIES STARTED */
+#tecnologias 
+{
+    padding: 5rem 4rem;
+}
+
 .tecnologias__title 
 {
     font-size: 1.8rem;
@@ -249,7 +255,7 @@ body
 .contact__input, .contact__textarea 
 {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.5rem 5rem;
     font-family: "Montserrat-regular";
     font-size: 1rem;
     border: 2px solid #ccc;
@@ -285,7 +291,7 @@ body
 {
     color: white;
     font-family: "Arco";
-    font-size: 1rem;
+    font-size: 0.6rem;
     margin: 0;
 }
 /* FOOTER FINISH */
@@ -381,18 +387,25 @@ body
     {
         justify-content: flex-start;
     }
+
+    .intro__button
+    {
+        transition: background-color 0.3s ease;
+    }
+
+    .intro__button:hover
+    {
+        background-color: #5a8320;
+    }
         /* INTRO QUERY END */
 
 
     /* PROYECTS QUERY START */
-    #proyectos
-    {
-        padding: 6rem 2rem;
-    }
 
     .proyectos__title
     {
-        margin-bottom: 3rem;
+        font-size: 2.2rem;
+        margin-bottom: 8rem;
     }
 
     .proyectos__grid
@@ -430,6 +443,12 @@ body
     /* PROYECTA QUERY END */
 
     /* TECNOLOGIES  QUERY START */
+    .tecnologias__title
+    {
+        font-size: 2.2rem;
+        margin-bottom: 8rem;
+    }
+
     .tecnologias__grid
     {
         flex-wrap: nowrap;
@@ -449,4 +468,56 @@ body
         transform: scale(1.1);
     }
     /* TECNOLOGIES  QUERY END */
+
+    /* FORM  QUERY START */
+    .contact
+    {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 1rem;
+    }
+
+    .contact__title
+    {
+        font-size: 2.2rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact__button
+    {
+        transition: background-color 0.3s ease;
+    }
+
+    .contact__button:hover 
+    {
+        background-color: #5a8320;
+    }
+
+    .contact__form-group
+    {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .contact__label
+    {
+        text-align: left;
+    }
+    /* FORM  QUERY END */
+
+    /* FOOTER  QUERY START */
+    .footer
+    {
+        padding: 0.5rem 1rem;
+    }
+
+    .footer__text
+    {
+        font-size: 1rem;
+        margin: 0;
+    }
+    /* FOOTER  QUERY END */
 }
