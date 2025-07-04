@@ -19,6 +19,7 @@
 body
 {
     font-family: "Montserrat-regular";
+    overflow-x: hidden;
 }
 
 /* HEADER STARTED */
@@ -385,12 +386,14 @@ body
     {
         display: block;
         flex: 1;
+        position: relative;
     }
 
     .intro__image img
     {
         width: 100%;
         height: auto;
+        transform: scale(1.2) translateX(10%);
     }
 
     .intro__title
