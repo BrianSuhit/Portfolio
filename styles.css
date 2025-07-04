@@ -1,10 +1,19 @@
+:root
+{
+    --color-primary: #38b764;
+    --color-hover: #257179;
+    --color-overlay: rgba(56, 183, 100, 0.7);
+    --color-menu-links: rgba(0, 0, 0, 0.3);
+    --color-titles: #333;
+}
+
 * 
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scrollbar-color: #77b02a transparent;
+    scrollbar-color: var(--color-primary) transparent;
 }
 
 body
@@ -34,7 +43,7 @@ body
 {
     font-family: "Arco";
     font-size: 2rem;
-    color: #77b02a;
+    color: var(--color-primary);
     text-align: center;
 }
 
@@ -61,7 +70,7 @@ body
     text-decoration: none;
     font-family: "Montserrat-bold";
     font-size: 0.95rem;
-    color: #77b02a;
+    color: var(--color-primary);
 }
 /* HEADER FINISH */
 
@@ -83,7 +92,7 @@ body
     font-family: "Montserrat-extrabold";
     font-size: 1.6rem;     /* Original 2rem */
     margin-bottom: 2rem;
-    color: #333333
+    color: var(--color-titles)
 }
 
 .intro__subtitle
@@ -101,7 +110,7 @@ body
 {
     text-decoration: none;
     display: inline-block;
-    background-color: #77b02a;
+    background-color: var(--color-primary);
     color: white;
     font-family: "Montserrat-bold";
     font-size: 1rem;
@@ -144,7 +153,7 @@ body
     font-family: "Montserrat-extrabold";
     text-align: center;
     margin: 3rem 0 2rem 0;     /* 2rem TENIA  */
-    color: #333;
+    color: var(--color-titles);
 }
 
 .proyectos__grid
@@ -177,7 +186,7 @@ body
 {
     position: absolute;
     inset: 0; /* Abarca todo el espacio del padre (.proyectos__item) */
-    background-color: rgba(119, 176, 42, 0.7);
+    background-color: var(--color-overlay);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,7 +214,7 @@ body
     font-family: "Montserrat-extrabold";
     text-align: center;
     margin: 3rem 0 2rem 0;
-    color: #333;
+    color: var(--color-titles);
 }
 
 .tecnologias__grid 
@@ -242,7 +251,7 @@ body
     font-family: "Montserrat-extrabold";
     text-align: center;
     margin-bottom: 2rem;
-    color: #333;
+    color: var(--color-titles);
 }
 
 .contact__form-group 
@@ -261,7 +270,7 @@ body
 .contact__input:focus, .contact__textarea:focus 
 {
     outline: none;
-    border-color: #77b02a; 
+    border-color: var(--color-primary); 
 }
 
 .contact__input, .contact__textarea 
@@ -285,7 +294,7 @@ body
     font-family: "Montserrat-extrabold";
     font-size: 1.1rem;
     color: white;
-    background-color: #77b02a;
+    background-color: var(--color-primary);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -296,7 +305,7 @@ body
 /* FOOTER STARTED */
 .footer
 {
-    background-color: #77b02a;
+    background-color: var(--color-primary);
     padding: 1rem 1rem;
     text-align: center;
 }
@@ -344,13 +353,13 @@ body
     {
         font-size: 1.2rem; /* 1 REM INIT */
         transition: transform 0.3s ease, color 0.3s ease;
-        color: rgba(0, 0, 0, 0.3);
+        color: var(--color-menu-links);
     }
 
     .header__menu-link:hover 
     {
         transform: scale(1.2);
-        color: #77b02a;
+        color: var(--color-primary);
     }
     /* HEADER QUERY END */
 
@@ -428,7 +437,7 @@ body
 
     .intro__button:hover
     {
-        background-color: #5a8320;
+        background-color: var(--color-hover);
     }
         /* INTRO QUERY END */
 
@@ -453,7 +462,7 @@ body
     .proyectos__overlay
     {
         opacity: 0;
-        background-color: rgba(119, 176, 42, 0.8);
+        background-color: var(--color-overlay);
         transition: opacity 0.3s ease-in-out;
     }
 
@@ -534,7 +543,7 @@ body
 
     .contact__button:hover 
     {
-        background-color: #5a8320;
+        background-color: var(--color-hover);
     }
 
     .contact__label
