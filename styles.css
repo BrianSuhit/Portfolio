@@ -50,6 +50,7 @@ body
 
 .header__nav 
 {
+    display: none;
     width: 100%;
 }
 
@@ -72,6 +73,27 @@ body
     font-family: "Montserrat-bold";
     font-size: 0.95rem;
     color: var(--color-primary);
+}
+
+.header__toggle 
+{
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.header__toggle-icon 
+{
+    width: 32px;
+    height: 32px;
+}
+
+.header__toggle-icon--close 
+{
+    display: none;
 }
 /* HEADER FINISH */
 
@@ -567,4 +589,16 @@ body
         margin: 0;
     }
     /* FOOTER  QUERY END */
+}
+
+/* ANIMATION UTILITIES */
+.fade-in-element
+{
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hidden
+{
+    opacity: 0;
+    transform: translateY(30px);
 }

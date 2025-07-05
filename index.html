@@ -15,6 +15,12 @@
     <header class="header">
         <div class="header__container">
         <p class="Header__logo"> < Brian Suhit > </p>
+
+        <button class="header__toggle" aria-label="Abrir menú">
+            <img class="header__toggle-icon header__toggle-icon--menu" src="assets/icons/icon-menu.svg" alt="Abrir menú">
+            <img class="header__toggle-icon header__toggle-icon--close" src="assets/icons/icon-close.svg" alt="Cerrar menú">
+        </button>
+
         <nav class="header__nav">
             <ul class="header__menu">
                 <li class="header__menu-item"><a class="header__menu-link" href="#intro">Inicio</a></li>
@@ -61,9 +67,9 @@
 
     <!-- Seccion Proyectos -->
     <section id="proyectos">
-        <h2 class="proyectos__title">Proyectos</h2>
+        <h2 class="proyectos__title fade-in-element hidden">Proyectos</h2>
 
-        <div class="proyectos__grid">
+        <div class="proyectos__grid fade-in-element hidden">
             <a href="https://github.com/BrianSuhit/Portfolio" target="_blank" class="proyectos__item">
                 <img src="assets/images/placeholder-800x800.png" alt="proyecto 1">
                 <div class="proyectos__overlay">
@@ -89,9 +95,9 @@
 
     <!-- Seccion tecnologias que manejo -->
     <section id="tecnologias">
-        <h2 class="tecnologias__title">Tecnologias</h2>
+        <h2 class="tecnologias__title fade-in-element hidden">Tecnologias</h2>
 
-        <div class="tecnologias__grid">
+        <div class="tecnologias__grid fade-in-element hidden">
         <img class="tecnologias__icon" src="assets/icons/html5.svg" alt="HTML" title="HTML5">
         <img class="tecnologias__icon" src="assets/icons/css.svg" alt="CSS" title="CSS">
         <img class="tecnologias__icon" src="assets/icons/javascript.svg" alt="JavaScript" title="JavaScript">
@@ -102,8 +108,8 @@
 
     <!-- Seccion Contacto -->
     <section id="contacto" class="contact">
-        <h2 class="contact__title">Contacto</h2>
-        <form name="contacto" class="contact__form" action="/" method="post" data-netlify="true">
+        <h2 class="contact__title fade-in-element hidden">Contacto</h2>
+        <form name="contacto" class="contact__form fade-in-element hidden" action="/" method="post" data-netlify="true">
             <div class="contact__form-group">
                 <label for="nombre" class="contact__label">Nombre completo</label>
                 <input id="nombre" name="nombre" type="text" class="contact__input" required>
@@ -128,5 +134,6 @@
     <footer class="footer">
         <p class="footer__text">© 2025 Brian Suhit. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
