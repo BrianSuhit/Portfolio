@@ -105,7 +105,6 @@ body
     justify-content: center;
     align-items: center;
 
-    /* Estilos para que ocupe toda la pantalla */
     position: fixed; 
     top: 0;
     left: 0;
@@ -157,7 +156,7 @@ body
 .intro__title
 {
     font-family: "Montserrat-extrabold";
-    font-size: 1.6rem;     /* Original 2rem */
+    font-size: 1.6rem;
     margin-bottom: 2rem;
     color: var(--color-titles)
 }
@@ -213,13 +212,12 @@ body
 /* MAIN FINISH */
 
 /* PROYECTS STARTED */
-
 .proyectos__title 
 {
     font-size: 1.8rem;
     font-family: "Montserrat-extrabold";
     text-align: center;
-    margin: 3rem 0 2rem 0;     /* 2rem TENIA  */
+    margin: 3rem 0 2rem 0;
     color: var(--color-titles);
 }
 
@@ -252,7 +250,7 @@ body
 .proyectos__overlay 
 {
     position: absolute;
-    inset: 0; /* Abarca todo el espacio del padre (.proyectos__item) */
+    inset: 0;
     background-color: var(--color-overlay);
     display: flex;
     justify-content: center;
@@ -344,7 +342,6 @@ body
 {
     width: 100%;
     padding: 1rem 2.5rem;
-    /* padding: 0.5rem 3rem; */
     font-family: "Montserrat-regular";
     font-size: 1rem;
     border: 2px solid #ccc;
@@ -366,6 +363,14 @@ body
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
+}
+
+.contact__button:disabled 
+{
+    background-color: #A5D6A7; 
+    color: #E8F5E9; 
+    cursor: not-allowed; 
+    box-shadow: none;
 }
 /* CONTACT FINISHED */
 
@@ -425,7 +430,7 @@ body
 
     .header__menu-link
     {
-        font-size: 1.2rem; /* 1 REM INIT */
+        font-size: 1.2rem; 
         transition: transform 0.3s ease, color 0.3s ease;
         color: var(--color-menu-links);
     }
@@ -617,10 +622,10 @@ body
         transition: background-color 0.3s ease;
     }
 
-    .contact__button:hover 
-    {
-        background-color: var(--color-hover);
-    }
+.contact__button:not(:disabled):hover 
+{
+    background-color: var(--color-hover);
+}
 
     .contact__label
     {

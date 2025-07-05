@@ -34,11 +34,41 @@ menuLinks.forEach(link => {
     });
 });
 
-// =====================================
-// SEGURO PARA EL RESIZE DE VENTANA
-// =====================================
 window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
         header.classList.remove('menu-abierto');
+    }
+});
+
+// =====================================
+// LÓGICA DEL FORMULARIO DE CONTACTO
+// =====================================
+const form  = document.getElementById('contact-form');
+const submitButton  = document.querySelector('button[type="submit"]');
+const requiredFields = form .querySelectorAll('[required]');
+
+function isFormValid() {
+    // Recorremos cada uno de los campos que seleccionamos antes
+    for (const field of requiredFields) {
+        // Si el valor del campo, sin espacios en blanco al principio o al final (.trim()), está vacío...
+        if (field.value.trim() === '') {
+            // ...entonces el formulario NO es válido. Devolvemos 'false' y la función termina aquí.
+            return false;
+        }
+    }
+
+    return true;
+}
+
+form.addEventListener('input', () => {
+    // Cada vez que el usuario escribe algo en el formulario...
+
+    // ...llamamos a nuestra función para ver si el formulario es válido ahora.
+    if (isFormValid()) {
+        // Si ES válido, habilitamos el botón.
+        submitButton.disabled = false;
+    } else {
+        // Si NO es válido, lo deshabilitamos.
+        submitButton.disabled = true;
     }
 });
