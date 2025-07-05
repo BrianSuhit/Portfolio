@@ -35,7 +35,8 @@ body
 .header__container
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
@@ -43,7 +44,7 @@ body
 .Header__logo 
 {
     font-family: "Arco";
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: var(--color-primary);
     text-align: center;
 }
@@ -75,6 +76,7 @@ body
     color: var(--color-primary);
 }
 
+/* MENU HAMBURGUESA */
 .header__toggle 
 {
     display: block;
@@ -95,6 +97,48 @@ body
 {
     display: none;
 }
+
+.header.menu-abierto .header__nav 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Estilos para que ocupe toda la pantalla */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-overlay);
+    backdrop-filter: blur(5px);
+    z-index: 1500; 
+}
+
+.header.menu-abierto .header__menu 
+{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header.menu-abierto .header__menu-link 
+{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.header.menu-abierto .header__toggle-icon--menu 
+{
+    display: none;
+}
+
+.header.menu-abierto .header__toggle-icon--close 
+{
+    display: block;
+}
+
 /* HEADER FINISH */
 
 
@@ -363,13 +407,20 @@ body
 
     .header__nav
     {
+        display: block;
         width: auto;
     }
 
     .header__menu
     {
+        flex-direction: row;
         justify-content: flex-end;
-        gap: 2.5rem;  /* 2 REM INIT */
+        gap: 2.5rem;
+    }
+
+    .header__toggle 
+    {
+        display: none; 
     }
 
     .header__menu-link
