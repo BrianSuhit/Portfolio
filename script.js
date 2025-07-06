@@ -40,14 +40,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const requiredFields = form.querySelectorAll('[required]');
         const closeModalButton = document.getElementById('close-modal-btn');
 
+        // --- FUNCIONES PARA CONTROLAR EL MODAL ---
+        const openModal = () => {
+        modal.classList.remove('hidden');
+        // Eliminamos los estilos en línea para permitir que el CSS haga la transición
+        modal.style.opacity = ''; 
+        modal.style.pointerEvents = '';
+        };
+
+        const closeModal = () => {
+        modal.classList.add('hidden');
+        // Volvemos a poner los estilos en línea para evitar el "FOUC" al recargar
+        modal.style.opacity = '0';
+        modal.style.pointerEvents = 'none';
+        };
+
+        // --- LÓGICA DE LA PÁGINA ---
+    
+        // Comprobar si debemos abrir el modal al cargar la página
         const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('success') === 'true') 
-        {
-            modal.classList.remove('hidden');
+        if (urlParams.has('success')) {
+        openModal();
         }
 
-
-        // Función de validación (interna a este bloque)
+        // Validar el formulario mientras se escribe
         function isFormValid() {
             for (const field of requiredFields) {
                 if (field.value.trim() === '') return false;
@@ -55,31 +71,20 @@ document.addEventListener('DOMContentLoaded', () => {
             return true;
         }
 
-        // Habilitar/Deshabilitar el botón al escribir
         form.addEventListener('input', () => {
             submitButton.disabled = !isFormValid();
         });
-
-        // form.addEventListener('submit', (event) => {
-        //     event.preventDefault();
-            
-        //     modal.classList.remove('hidden');
-        //     form.reset();
-        //     submitButton.disabled = true;
-        // });
-
-        // Cerrar el modal
+    
+        // Cerrar el modal con el botón
         if (closeModalButton) {
-            closeModalButton.addEventListener('click', () => {
-                modal.classList.add('hidden');
-            });
+            closeModalButton.addEventListener('click', closeModal);
         }
-        
+    
+        // Cerrar el modal haciendo clic fuera
         modal.addEventListener('click', (event) => {
             if (event.target === modal) {
-                modal.classList.add('hidden');
+                closeModal();
             }
         });
     }
-
 });
